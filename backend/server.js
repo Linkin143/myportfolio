@@ -14,7 +14,7 @@ app.use(cors());
 
 dotenv.config();
 const port = process.env.PORT || 4000;
-const DB_URL =process.env.DB_URL || "mongodb://localhost:27017/mpuserdetaildb"
+const DB_URL =process.env.DB_URL || "mongodb+srv://kumarprince143p143:7vCsEtXvbvIoeMGa@myportfoliodb.3xldw.mongodb.net/?retryWrites=true&w=majority&appName=myportfolioDB"
 
 
 app.use("/",userRoute);
