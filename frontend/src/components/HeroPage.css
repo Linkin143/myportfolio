@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    color: #f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section {
+    padding: 100px;
+}
+
+/*Banner design*/
+.banner {
+    position: relative;
+  
+    background: url(https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/banner.jpg?raw=true);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2 {
+    font-size: 3em;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5em;
+}
+.banner h2 span {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.banner h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+/*Design of button*/
+
+.btn-first:hover {
+    color: #fff;
+    background-color: #131418;
+    border: 2px solid #21e821;
+}
+.btn-second {
+    color: #fff;
+    background-color: #131418;
+    border: 2px solid #21e821;
+}
+.btn-second:hover {
+    background: #fff;
+    color: #131418;
+    border: 2px solid #131418;
+}
+/*Responsive part*/
+
+@media (max-width: 991px) {
+    section {
+        padding: 100px 50px;
+    }
+    .banner {
+        padding: 150px 50px;
+    }
+    .banner h2,
+    .banner h3 {
+        font-size: 1em;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .contentbox h3 {
+        font-size: 20px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .w50 {
+        margin-top: 20px;
+    }
+    .services .content .servicesbox {
+        height: 200px;
+    }
+    .work .content .workbox {
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonials .content .testimonialbox {
+        max-width: calc(100% - 20px);
+        padding: 40px 20p;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .testimonials .content .testimonialbox h3 {
+        margin-top: 20px;
+    }
+    .contactinfo {
+        margin: 20px 0;
+    }
+}
+@media (max-width: 600px) {
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+    .banner {
+        padding: 150px 20px 100px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+    .btn {
+        margin-top: 10px;
+        
+        font-size: clamp(0.5rem,2vw,2rem)
+    }
+}

@@ -1,0 +1,66 @@
+.project-heading{
+    text-align: center;
+    
+    
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: clamp(1rem,2vw,2.2rem);
+    margin:20px 0px 40px 0px;
+}
+
+.project-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    
+}
+
+.pro-btn-workcard{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.btn{
+    vertical-align: bottom;
+}
+.project-card{
+background:#1a1919 ;
+padding: 1.2rem 1rem;
+}
+
+.project-card:hover{
+    box-shadow: 0 0 10px #21e821;
+}
+.project-card img{
+    width: 100%;
+}
+.project-title{
+    color: #fff;
+    padding: 1rem 0;
+}
+.pro-details p{
+    padding-bottom: 1rem;
+    font-size: clamp(0.8rem,2vw,1rem);
+    display: inline;
+}
+
+
+@media screen and (max-width:900px) {
+    .project-container{
+     
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+
+@media screen and (max-width:600px) {
+    .project-container{
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
