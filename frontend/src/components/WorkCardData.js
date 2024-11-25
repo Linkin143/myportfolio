@@ -32,7 +32,7 @@ const ProjectCardData = [
         skill: "#HTML , #CSS , #JavaScript , #ReactJs , #Node.Js , #ExpressJs",
         details:"/project",
         view: "",
-         source:"https://github.com/Linkin143/DemoTechPortfolio"
+         source:"https://github.com/Linkin143/myportfolio"
     },
     {
         imgsrc: Pro4,
