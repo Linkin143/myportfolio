@@ -32,7 +32,7 @@ const Form = () => {
 
     if (!response.ok) {
       console.log(result.error)
-      setError(result.error);
+      setError(error);
 
     }
     if (response.ok) {
