@@ -8,29 +8,40 @@ import sendMail from "./controllers/sendMail.js";
 import connectDB from "./db/connectDB.js";
 import userRoute from "./routes/userRoute.js";
 const app = new express();
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json());
 app.use(cors());
 
 dotenv.config();
-const port = process.env.PORT || 4000;
-const DB_URL =process.env.DB_URL || "mongodb+srv://kumarprince143p143:7vCsEtXvbvIoeMGa@myportfoliodb.3xldw.mongodb.net/?retryWrites=true&w=majority&appName=myportfolioDB"
+process.env.NODE_OPTIONS = '--tls-min-v1.2';
+
+const port = process.env.PORT;
+
+const DB_URL =process.env.DB_URL;
 
 
-app.use("/",userRoute);
+app.use("/", userRoute);
 
 app.get("/mail", sendMail);
 
 
-connectDB(DB_URL).then(()=>{
-    app.listen(port, () => {
-        try {
-            console.log(`Server is running on the PORT:${port}`);
-            
-        } catch (error) {
-            console.log(error);
-        }
-    })
-})
+function startServer() {
+
+    try {
+        // Connect to the database
+        connectDB(DB_URL);
+        console.log("Database connected successfully!");
+
+        // Start the server
+        app.listen(port, () => {
+            console.log(`Server is running on PORT: ${port}`);
+        });
+    } catch (error) {
+        console.error("Failed to start the server:", error);
+        process.exit(1); // Exit the process if there's a critical failure
+    }
+};
+
+startServer();
 
 

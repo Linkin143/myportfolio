@@ -21,8 +21,8 @@ const ProjectDetail = (props) => {
 
                 </span>
                 <div className='pd-btn'>
-                    <NavLink  to={props.view} className="project-btn">&nbsp;&nbsp;View&nbsp;&nbsp;</NavLink>
-                    <NavLink to={props.source} className="project-btn">Source</NavLink>
+                    <NavLink target='_blank' to={props.view} className="project-btn">&nbsp;&nbsp;View&nbsp;&nbsp;</NavLink>
+                    <NavLink target='_blank' to={props.source} className="project-btn">Source</NavLink>
                 </div>
 
             </div>

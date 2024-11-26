@@ -19,5 +19,6 @@ const usersubscribedSchema = new mongoose.Schema({
 
 const userData = mongoose.model("userData", userdataSchema);
 const usersubscribedData =mongoose.model("usersubscribedData",usersubscribedSchema);
+
 export { userData, usersubscribedData };
 

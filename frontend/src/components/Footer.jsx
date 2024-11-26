@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <i className="fa fa-envelope"></i>
-                        <p><NavLink target='_blank' to="https://mail.google.com/mail/u/0/#inbox?compose=FZxzwjpjqFZmJwnQTBSBBnnSHjhgHKVrDXllcCrzbvQrpcFcLhnPGKWRfRFlthzQNxLmtDGTMJSqQQzqxxzzVlsblDXnWRpdBlVqkLpWsNSdwllgQxZdvjRsFftfCbrmXmSfkKggpNgztqZshcZZsHQzphGpqtZwzTdhg"> kumarprince143p143@gmail.com</NavLink></p>
+                        <p><NavLink target='_blank' to="https://mail.google.com/mail/u/2/#inbox?compose=new">linkinsoftwaresolution@gmail.com</NavLink></p>
                     </div>
                 </div>
                 <div className="footer-right col-md-4 col-sm-6">
@@ -45,7 +45,9 @@ const Footer = () => {
                         <NavLink to="/contact"> Contact Us</NavLink> 
                         
                     </p>
-                    <p className="name">  FutureX &copy; 2024</p>
+                    <p className="name">&copy; 2024 FutureX. All rights reserved.</p>
+                    <br></br>
+                    <NavLink style={{ textDecoration: 'none' }} target='_blank' to="/contact"> <p className="">Terms and Condition </p></NavLink> 
                 </div>
             </footer>
 

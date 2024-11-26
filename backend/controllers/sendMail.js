@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import nodemailer from "nodemailer";
 dotenv.config();
 
-const sendMail = async (to,subject,text,html) => {
+const sendMail = async (to, subject, text, html) => {
 
     let testAccount = await nodemailer.createTestAccount();
     // Below only needed if you dont have a real mail account.
@@ -10,6 +10,7 @@ const sendMail = async (to,subject,text,html) => {
         service: "gmail",
         host: "smtp.gmail.com",
         port: 587,
+        type:"oauth2",
         secure: false, // true for port 465, false for other ports
         auth: {
             user: process.env.USER,
@@ -29,7 +30,11 @@ const sendMail = async (to,subject,text,html) => {
         html
     })
 
-    console.log("Message sent: %s", info.messageId);
+    console.log({
+        msg: "You should received a reply mail.",
+        info: info.messageId,
+        preview: nodemailer.getTestMessageUrl(info)
+    });
 
 }
 
