@@ -20,7 +20,7 @@ const Form = () => {
 
     const addUser = { name, email, subject, message };
 
-    const response = await fetch("http://localhost:4000/", {
+    const response = await fetch("https://myportfolio-r690.onrender.com/", {
       method: "POST",
       body: JSON.stringify(addUser),
       headers: {
@@ -54,7 +54,7 @@ const Form = () => {
 
 
       setTimeout(async () => {
-        const response = await fetch("http://localhost:4000/mail", {
+        const response = await fetch("https://myportfolio-r690.onrender.com/mail", {
           method: "GET",
         });
         const result = await response.json();
