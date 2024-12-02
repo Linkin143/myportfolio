@@ -4,8 +4,6 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
-import path from "path";
-import { fileURLToPath } from 'url';
 import connectDB from "./db/connectDB.js";
 import userRoute from "./routes/userRoute.js";
 const app = new express();
@@ -22,18 +20,19 @@ const DB_URL =process.env.DB_URL;
 
 
 // Define __dirname for ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 // Serve static files
-app.use(express.static(path.join(__dirname, '../frontend/build')));
+// app.use(express.static(path.join(__dirname, '../frontend/build')));
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+//   });
 
 // API routes
 app.use("/api", userRoute);
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
-  });
+
 
 
 
