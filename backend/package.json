@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
@@ -11,6 +12,7 @@
   "author": "Prince",
   "license": "ISC",
   "dependencies": {
+    "api-routes": "^0.2.1",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -20,6 +22,7 @@
     "mongoose": "^8.8.2",
     "nodemailer": "^6.9.15",
     "nodemon": "^3.1.4",
+    "path": "^0.12.7",
     "sweetalert": "^2.1.2"
   },
   "devDependencies": {
