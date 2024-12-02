@@ -30,7 +30,7 @@ const DB_URL =process.env.DB_URL;
 //   });
 
 // API routes
-app.use("/api", userRoute);
+app.use("/", userRoute);
 
 
 

@@ -16,7 +16,7 @@ const PopupForm = (props) => {
 
         const addSubscriber = { name, email };
 
-        const response = await fetch("https://myportfolio-r690.onrender.com/api/subscriber", {
+        const response = await fetch("https://myportfolio-r690.onrender.com/subscriber", {
             method: "POST",
             body: JSON.stringify(addSubscriber),
             headers: {
@@ -49,7 +49,7 @@ const PopupForm = (props) => {
 
 
             setTimeout(async () => {
-                const response = await fetch("https://myportfolio-r690.onrender.com/api/lastsubscriber", {
+                const response = await fetch("https://myportfolio-r690.onrender.com/lastsubscriber", {
                   method: "GET",
                 });
                 const result = await response.json();
