@@ -6,7 +6,6 @@ import dotenv from "dotenv";
 import express from "express";
 import path from "path";
 import { fileURLToPath } from 'url';
-import sendMail from "./controllers/sendMail.js";
 import connectDB from "./db/connectDB.js";
 import userRoute from "./routes/userRoute.js";
 const app = new express();
@@ -27,20 +26,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // API routes
 app.use("/api", userRoute);
-// app.use('/api', apiRoutes);
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
   });
 
 
-
-
-app.get("/mail", sendMail);
 
 
 function startServer() {
