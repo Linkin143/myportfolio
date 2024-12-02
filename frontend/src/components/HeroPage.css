@@ -70,8 +70,8 @@ section {
     }
     .btn {
         margin-top: 10px;
-        padding: 10px 20px;
-        font-size: 16px;
+        
+        font-size: clamp(0.8rem,2vw,2rem)
     }
     .heading h2 {
         font-weight: 600;
@@ -120,6 +120,6 @@ section {
     .btn {
         margin-top: 10px;
         
-        font-size: clamp(0.5rem,2vw,2rem)
+        font-size: clamp(0.8rem,2vw,2rem)
     }
 }

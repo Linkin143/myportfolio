@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
 }
 nav{
-    height: 4rem;
+    padding: 7px;
     width: 100vw;
     background-color: #1a1919;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -21,11 +21,11 @@ nav{
 
 /*Styling logo*/
 .logo{
-    padding:1vh 2vw 2vh 1vw;
+    /* padding:1vh 2vw 2vh 1vw; */
     text-align: center;
 }
 .logo img {
-    height: 3rem;
+    /* height: 3rem; */
     width: 3rem;
 }
 
@@ -180,7 +180,7 @@ nav{
         width: 2rem;
     }
     .logo{
-        padding:4vh 4vw;
+        /* padding:4vh 4vw; */
         text-align: center;
     }
 }

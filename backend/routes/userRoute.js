@@ -71,7 +71,7 @@ router.get("/mail", async (req, res) => {
             <p style="margin: 10px 0;"><strong>The FutureX Team</strong></p>
         </div>
         <div style="text-align: center; padding: 15px 10px; font-size: 0.9rem; color: #666; background: #f8f9fa;">
-            <p style="margin: 10px 0;">Need urgent assistance? Visit our <a href="https://futurex.com/support" style="color: #007bff; text-decoration: none;">Support Page</a>.</p>
+            <p style="margin: 10px 0;">Need urgent assistance? Visit our <a href="https://myportfolio-app-y1up.onrender.com/contact" style="color: #007bff; text-decoration: none;">Support Page</a>.</p>
             <p style="margin: 10px 0;">&copy; 2024 FutureX. All rights reserved.</p>
         </div>
     </div>
