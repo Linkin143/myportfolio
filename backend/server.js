@@ -1,6 +1,5 @@
 //jshint esversion:6
 
-import apiRoutes from 'api-routes'; // Import the router
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -20,7 +19,7 @@ process.env.NODE_OPTIONS = '--tls-min-v1.2';
 const port = process.env.PORT;
 const DB_URL =process.env.DB_URL;
 
-app.use("/", userRoute);
+
 
 
 // Define __dirname for ES modules
@@ -31,10 +30,11 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'build')));
 
 // API routes
-app.use('/api', apiRoutes);
+app.use("/api", userRoute);
+// app.use('/api', apiRoutes);
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
   });
 
 
