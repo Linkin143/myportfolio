@@ -90,13 +90,13 @@ const Form = () => {
     <div className='form'>
       <form onSubmit={handleSubmit}>
         <label>Your Name*</label>
-        <input type='text' value={name} onChange={(event) => setName(event.target.value)}></input>
+        <input required={true} type='text' placeholder='Enter your name' value={name} onChange={(event) => setName(event.target.value)}></input>
         <label>Email*</label>
-        <input type='email' value={email} onChange={(event) => setEmail(event.target.value)}></input>
+        <input required={true} type='email' placeholder='Type your email' value={email} onChange={(event) => setEmail(event.target.value)}></input>
         <label>Subject*</label>
-        <input type='text' value={subject} onChange={(event) => setSubject(event.target.value)}></input>
+        <input required={true} type='text' placeholder='Type your subject' value={subject} onChange={(event) => setSubject(event.target.value)}></input>
         <label>Message</label>
-        <textarea rows="6" placeholder='Type your message here.' value={message} onChange={(event) => setMessage(event.target.value)}></textarea>
+        <textarea rows="6" placeholder='Type your message here' value={message} onChange={(event) => setMessage(event.target.value)}></textarea>
         <button className='btn'>Submit</button>
       </form>
 

@@ -78,7 +78,7 @@ const PopupForm = (props) => {
                     <label>Name*</label>
                     <input required={true} type='text' placeholder='Enter your name' value={name} onChange={(event) => setName(event.target.value)}></input>
                     <label>Email*</label>
-                    <input required={true} type='email' placeholder='Type your email here' value={email} onChange={(event) => setEmail(event.target.value)}></input>
+                    <input required={true} unique={true} type='email' placeholder='Type your email here' value={email} onChange={(event) => setEmail(event.target.value)}></input>
                     <submit className="btn" onClick={handleClick}>Submit</submit>
                 </div>
             </div>
