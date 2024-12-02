@@ -31,7 +31,7 @@ const ProjectCardData = [
         detail: "This portfolio website showcases various projects, detailing the programming languages used. It includes source code files and direct links to the live websites, providing a comprehensive overview of the work completed and the technical skills applied.",
         skill: "#HTML , #CSS , #JavaScript , #ReactJs , #Node.Js , #ExpressJs",
         details:"/project",
-        view: "",
+        view: "https://myportfolio-app-y1up.onrender.com/",
          source:"https://github.com/Linkin143/myportfolio"
     },
     {
