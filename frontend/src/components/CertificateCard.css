@@ -9,7 +9,7 @@
 
 .certificate-header {
     animation: c 10s linear infinite;
-    margin: 20px;
+   
 }
 
 .certificate-header::before {
