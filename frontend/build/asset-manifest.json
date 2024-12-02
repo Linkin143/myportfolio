@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eddd0422.css",
+    "main.js": "/static/js/main.98f8bda5.js",
+    "static/media/pro3.jpg": "/static/media/pro3.fcdfd9ae30258429c535.jpg",
+    "static/media/expertiseImg.gif": "/static/media/expertiseImg.3693311f2bebcf3484c8.gif",
+    "static/media/aboutimg.png": "/static/media/aboutimg.626fd9ca918edc1c64e6.png",
+    "static/media/about-bg.png": "/static/media/about-bg.ff2801e7b743bdc89e9c.png",
+    "static/media/pro2.png": "/static/media/pro2.a60d362db8f7dbec791b.png",
+    "static/media/pro4.png": "/static/media/pro4.ae928f83148bbe5bbace.png",
+    "static/media/project-bg.png": "/static/media/project-bg.86fc0a3482d77a2441c7.png",
+    "static/media/contact-bg.png": "/static/media/contact-bg.d6fd0cd3b544191087f2.png",
+    "static/media/techwork.png": "/static/media/techwork.bb1c49487f18f60f85c6.png",
+    "static/media/pro1.png": "/static/media/pro1.356446e9052ff5107f9b.png",
+    "static/media/certiImg6.png": "/static/media/certiImg6.271620e9dc27b921bfea.png",
+    "static/media/certiImg1.png": "/static/media/certiImg1.b827e214ce276bce5427.png",
+    "static/media/certificate-bg.png": "/static/media/certificate-bg.93c221378b898c0514c5.png",
+    "static/media/certiImg2.png": "/static/media/certiImg2.96ab7f7d3f3e6b0c2ed2.png",
+    "static/media/aboutimg2.png": "/static/media/aboutimg2.0b112d5d1c0290553b47.png",
+    "static/media/accountant.png": "/static/media/accountant.95e744cafe64db162274.png",
+    "static/media/certiImg4.svg": "/static/media/certiImg4.2b0771425bd47b49917ba320d033a2b7.svg",
+    "static/media/certiImg5.svg": "/static/media/certiImg5.47c546a6f22b42bda48fe9f9b970bf4c.svg",
+    "static/media/certiImg3.svg": "/static/media/certiImg3.a29faa8f3819cf96e1926db915ba0001.svg",
+    "index.html": "/index.html",
+    "main.eddd0422.css.map": "/static/css/main.eddd0422.css.map",
+    "main.98f8bda5.js.map": "/static/js/main.98f8bda5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eddd0422.css",
+    "static/js/main.98f8bda5.js"
+  ]
+}
