@@ -45,7 +45,7 @@ const PopupForm = (props) => {
                     icon: 'success',
                     confirmButtonText: 'OK'
                 });
-            }, 1000);
+            },500);
 
 
             setTimeout(async () => {
@@ -57,7 +57,7 @@ const PopupForm = (props) => {
         
         
         
-              }, 1000);
+              },1000);
         
               navigate("/")
 

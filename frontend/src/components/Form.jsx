@@ -42,7 +42,7 @@ const Form = () => {
       setEmail("");
       setSubject("");
       setMessage("");
-      
+
       setTimeout(() => {
         swal({
           title: 'Thanks! for contacting us.',
