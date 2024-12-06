@@ -183,6 +183,43 @@ nav{
         /* padding:4vh 4vw; */
         text-align: center;
     }
+    .container-eg-btn-4 {
+        font-family: sans-serif;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-left: 25px;
+        line-height: normal;
+    }
+    .container-eg-btn-4 .button {
+        
+        /* margin: 15px; */
+        padding: 4px 4px;
+        text-align: center;
+        font-size: clamp(0.8rem, 2vw, 2.2rem);
+        position: relative;
+        transition: .3s;
+        
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 12px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 2px solid white;
+        cursor: pointer;
+    }
+    
+    .container-eg-btn-4 .button-2:hover {
+        background-color: #21e821;
+        color: black;
+        border: 2px solid #21e821;
+    }
+
 }
 /*Animating Hamburger Icon on Click*/
 .toggle .line1{
@@ -194,4 +231,10 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@media screen and (min-width: 800px){
+    .container-eg-btn-4{
+        display: none;
+    }
 }
